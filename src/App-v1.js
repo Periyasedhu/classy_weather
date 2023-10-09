@@ -89,7 +89,9 @@ class App extends React.Component {
             onChange={(e) => this.setState({ location: e.target.value })}
           />
         </div>
-        <button onClick={this.fetchWeather}>Get weather</button>
+        <button className="button" onClick={this.fetchWeather}>
+          Get weather
+        </button>
 
         {this.state.isLoading && <p className="loader">Loading...</p>}
 
